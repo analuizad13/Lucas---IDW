@@ -4,30 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BlogTech — Navbar</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./css/hero.css" />
   <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/sidebarra.css"/>
 </head>
-
 <body>
 <header class="site-header">
   <nav class="nav-inner">
-
-
     <!-- Logo -->
     <a href="#" class="nav-logo">BlogTech</a>
-
     <!-- Links -->
     <ul class="nav-links">
       <li><a href="#">Início</a></li>
       <li><a href="#">Artigos</a></li>
       <li><a href="#">Sobre</a></li>
     </ul>
-
     <!-- Ações -->
     <div class="nav-actions">
       <a href="#" class="btn-entrar">Entrar</a>
@@ -35,23 +30,14 @@
         <span class="material-symbols-outlined">search</span>
       </button>
     </div>
-
     <button class="btn-hamburguer">
       <span class="material-symbols-outlined">menu</span>
     </button>
-
-
-
   </nav>
-  <link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="./css/hero.css" />
-<link rel="stylesheet" href="./css/footer.css" />
 </header>
-
 <script>
   let menu = document.querySelector(".btn-hamburguer");
   let nav = document.querySelector(".nav-inner");
-
   menu.addEventListener("click", () => {
     nav.classList.toggle ("open");
   });
@@ -60,16 +46,13 @@
 <main>
   <section class="hero-section" id="inicio">
     <div class="hero-container">
-      <div class="hero-titulo-wrapper">
-        <h1 class="hero-titulo">Bem-vindo ao Nosso Blog</h1>
+      <div class="hero-titulo-wrapper"><h1 class="hero-titulo">Bem-vindo ao Nosso Blog</h1>
       </div>
-
       <div class="hero-stats">
         <div class="stat-item">
           <span class="stat-valor">500 Comentários</span>
           <span class="stat-descricao">Interação ativa</span>
         </div>
-
         <div class="stat-item">
           <span class="stat-valor">10k Visualizações</span>
           <span class="stat-descricao">Alcance global</span>
@@ -77,22 +60,112 @@
       </div>
     </div>
   </section>
-
   <!-- Seção de conteúdo principal: grade de artigos e barra lateral (Prática 03) -->
+   <section class="main-section">
+    <div class="content-container">
+      <!--grade de artigos-->
+      <div class="posts-container">
+        <article class="post-card">
+          <img src="https://th.bing.com/th/id/R.063ae037ebb8238a6dd7ffde406ef4c5?rik=pWarTVtIwCZbIg&pid=ImgRaw&r=0" 
+          alt="Seoul"/>
+          <div class="post-content">
+            <span class="post-date">14/06/2023</span>
+            <h2>Seoul</h2>
+            <p>Capital da Coreia, enorme, moderna e super movimentada</p>
+            <a href="">Leia mais</a>
+          </div>
+        </article>
+        <article class="post-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.sNNwzPc10X3yhTOEyPhpkgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+          alt="Incheon"/>
+          <div class="post-content">
+            <span class="post-date">26/01/2023</span>
+            <h2>Incheon</h2>
+            <p>Cidade portuária, famosa pelo aeroporto e pela área costeira</p>
+            <a href="">Leia mais</a>
+          </div>
+        </article>
+        <article class="post-card">
+          <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/10/09/2d/c5.jpg" 
+          alt="Suwon"/>
+          <div class="post-content">
+            <span class="post-date">23/10/2023</span>
+            <h2>Suwon</h2>
+            <p>Conhecida pela Fortaleza Hwaseong e pelo clima histórico</p>
+            <a href="">Leia mais</a>
+          </div>
+        </article>
+        <article class="post-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.XT3rQ3TOYo0W-Tk7pXOxCAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+          alt="Busan"/>
+          <div class="post-content">
+            <span class="post-date">06/11/2023</span>
+            <h2>Busan</h2>
+            <p>Segunda maior cidade da Coreia, famosa pelas praias, porto e vida urbana</p>
+            <a href="">Leia mais</a>
+          </div>
+        </article>
+        <article class="post-card">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.S7z9ePTgQWJqm_Vhd55wTQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+          alt="Gwangju"/>
+          <div class="post-content">
+            <span class="post-date">29/05/2023</span>
+            <h2>Gwangju</h2>
+            <p>Cidade cercada por montanhas com áreas residenciais mais tranquilas</p>
+            <a href="">Leia mais</a>
+          </div>
+        </article>
+        
+      </div>
+      <!--barra lateral-->
+      <aside class="side-bar">
+            <div class="form-container">
+              <h3>Fique por dentro</h3>
+              <p>
+                Receba curadorias exclusivas sobre design e tecnologia
+                diretamente no seu e-mail
+              </p>
+              <input type="email" name="email" id="email" />
+              <button class="btn-email">Inscrever-se</button>
+            </div>
+            <div class="categories-container">
+              <h3>Categorias</h3>
+              <ul>
+                <li>
+                  <span class="title-category">Design</span>
+                  <span class="badge-category">24</span>
+                </li>
+                <li>
+                  <span class="title-category">Tecnologia</span>
+                  <span class="badge-category">18</span>
+                </li>
+                <li>
+                  <span class="title-category">Carreira</span>
+                  <span class="badge-category">12</span>
+                </li>
+              </ul>
+            </div>
+            <div class="editor-container">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0rSzP0lQzan67RshROJ9dlqlS5NBNtEer35OuxJiSxynnwGFipSBQKGk&s=10" alt="Foto do editor chefe" />
+              <h4>Andrew Garfield</h4>
+              <span>Editor Chefe e Ator</span>
+              <p>Nascido em Los Angeles em 1983 e criado na Inglaterra,Andrew Garfield estudou teatro na Royal Central School of Speech and Drama.Ele iniciou sua carreira no teatro britânico antes de alcançar fama mundial como Eduardo Saverin em A Rede Social(2010)
+              </p>
+            </div>
+          </aside>
+    </div>
+   </section>
 </main>
 <footer class="site-footer">
   <div class="footer-container">
     <a href="./index.html" class="footer-brand"> BlogTech </a>
-
     <nav class="footer-nav">
       <a href="#">Privacidade</a>
       <a href="#">Termos</a>
       <a href="#">Contato</a>
     </nav>
-
     <p class="footer-copy">© 2026 BlogTech. Todos os direitos reservados.</p>
   </div>
 </footer>
-
 </body>
 </html>

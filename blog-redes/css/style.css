@@ -21,12 +21,12 @@ body {
   --nav-height: 64px;
   --nav-padding: 2rem;
   --base-font: "Inter", sans-serif;
-  --max-width-nav: 1400px;
-  --max-width-content: 1280px;
-  --border-radius: 0.5rem;
+--max-width-nav: 1400px;
+--max-width-content: 1280px;
+--border-radius: 0.5rem;
 
-  --color-border: rgba(72, 72, 71, 0.3);
-  --color-divisor: rgba(72, 72, 71, 0.15);
+--color-border: rgba(72, 72, 71, 0.3);
+--color-divisor: rgba(72, 72, 71, 0.15);
 }
 
 body {
@@ -49,6 +49,7 @@ body {
   width: var(--max-width-nav);
   margin: 0 auto;
 }
+
 
 .nav-links {
   display: flex;
